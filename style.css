@@ -1,0 +1,47 @@
+body {
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+}
+header {
+    width: 50%;
+    margin: 1em auto;
+}
+#board {
+    max-width: 50%;
+    margin: 1em auto;
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: teal;
+}
+#start,#winner{
+    margin-top: 20px;
+    text-align: center;
+}
+.square {
+    min-height: 1.3em;
+    text-align: center;
+    background-color: white;
+    font-size: 5rem;
+    font-family: monospace;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.square:hover{
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
+}
+.square:active{
+    background-color: #dcdcdc;
+}
+#reset{
+    border: 1px;
+    height: 50px;
+    width: 219.386px;
+    background-color: #FFDAB9;
+    box-shadow: 5px 5px 10px lightsteelblue;
+    cursor: pointer;
+}
