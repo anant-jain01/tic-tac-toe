@@ -6,6 +6,7 @@ body {
 header {
     width: 50%;
     margin: 1em auto;
+    text-align: center;
 }
 #board {
     max-width: 50%;
@@ -44,4 +45,10 @@ header {
     background-color: #FFDAB9;
     box-shadow: 5px 5px 10px lightsteelblue;
     cursor: pointer;
+}
+@media(max-width:475px){
+    header{
+        text-align: center;
+        width: auto;
+    }
 }
